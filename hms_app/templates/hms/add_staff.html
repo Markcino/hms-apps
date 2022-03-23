@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+<a class="btn btn-primary" href=""><i
+    class="fas fa-plus"></i> New Staff</a>
+<a class="btn btn-primary" href=""><i
+    class="fas fa-upload"></i> Upload Staff</a>
+{% endblock breadcrumb %}
+
+
+{% block content %}
+<div class="table-responsive">
+    <table id="studenttable" class="table table-bordered table-hover" data-page-length='100'>
+      <thead class="thead-light">
+        <tr>
+          <th>S/N</th>
+          <th>Fullname</th>
+          <th>Registration Number</th>
+          <th>Current Class</th>
+          <th>Gender</th>
+          <th>Mobile Phone Number</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class='clickable-row' data-href="">
+            <td>1</td>
+            <td>Gbalazeh Mark Allen</td>
+            <td>001</td>
+            <td>Doctor</td>
+            <td>male</td>
+            <td>+231880259596</td>
+            <td>Active</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}
